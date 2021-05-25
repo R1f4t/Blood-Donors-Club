@@ -1,0 +1,46 @@
+create database named as logintest
+	then create table
+
+	
+CREATE TABLE USER(
+    id int(12) not null PRIMARY KEY  AUTO_INCREMENT,
+    fname varchar(64) not null,
+    lname varchar(64) not null,
+    uname varchar(32) not null,
+    mob varchar(15) not null,
+    email varchar(40) not null,
+    psw varchar(1024) not null
+);
+
+CREATE TABLE DONOR(
+    id int(12) not null PRIMARY KEY  AUTO_INCREMENT,
+    uname varchar(64) not null,
+    gender varchar(10) not null,
+    age int(3) not null,
+    weight int(10) not null,
+    bloodgroup varchar(4) not null,
+    address varchar(100) not null,
+    mob varchar(15) not null,
+    email varchar(40) not null,
+    psw varchar(1024) not null,
+    ldd date not null
+);
+
+CREATE TABLE FORUMS(
+    name varchar(64) not null PRIMARY KEY ,
+    contact varchar(64) not null,
+    subject varchar(64) not null,
+    post varchar(1024) not null
+);
+
+CREATE TABLE FEEDBACK(
+    name varchar(64) not null PRIMARY KEY ,
+    contact varchar(64) not null,
+    feedback varchar(1024) not null
+);
+
+CREATE TABLE ANNOUNCEMENT(
+    id int(12) not null PRIMARY KEY  AUTO_INCREMENT,
+    annsubject varchar(64) not null,
+    annpost varchar(1024) not null
+);
